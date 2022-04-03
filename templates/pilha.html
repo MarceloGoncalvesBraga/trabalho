@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+    <title>Trabalho </title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+
+        </div>
+        <!-- edn id-header -->
+    </header>
+    <div class="container">
+
+        <h1>Pilha</h1>
+        <div class="quadro">
+
+            <div class="left">
+                <img src="{{ url_for('static', filename='img/pilha.png')}}" class="img">
+
+            </div>
+            <div class="texto">
+                <h2>Pilhas</h2>
+
+                <p>Pilhas s&atilde;o estruturas de dados em que s&oacute; &eacute; poss&iacute;vel inserir um novo elemento no final da pilha e s&oacute; &eacute; poss&iacute;vel remover um elemento do final da pilha. Dizemos que pilhas seguem um protocolo
+                    em que&nbsp;<strong>o &uacute;ltimo a entrar &eacute; o primeiro a sair</strong>. Pilhas s&atilde;o geralmente implementadas com arranjos.</p>
+
+                <p>Em uma pilha, para que o &uacute;ltimo elemento a entrar (ser inserido) seja o primeiro a sair (ser removido), precisamos ser capazes de:</p>
+
+                <ol>
+                    <li>
+                        <p>Inserir um novo elemento no final da pilha.</p>
+                    </li>
+                    <li>
+                        <p>Remover um elemento do final da pilha.</p>
+                    </li>
+                </ol>
+
+                <p>Existe uma forma de&nbsp;<a href="http://turing.com.br/pydoc/2.7/tutorial/datastructures.html#usando-listas-como-pilhas">usarmos listas como se fossem pilhas</a>&nbsp;em Python. Assim como fizemos na se&ccedil;&atilde;o anterior, usaremos
+                    listas em nossos exemplos, mas lembrando que pilhas s&atilde;o implementadas com arranjos. Podemos inclusive dizer que pilhas s&atilde;o arranjos em que as opera&ccedil;&otilde;es de inser&ccedil;&atilde;o e remo&ccedil;&atilde;o de
+                    elementos seguem um protocolo espec&iacute;fico: o &uacute;ltimo elemento a ser inserido &eacute; sempre o primeiro elemento a ser removido.</p>
+
+                <p>Vejamos um exemplo simples do uso de pilhas em Python.</p>
+
+                <pre>
+<code>pilha = [1, 1, 2, 3, 5]
+print(&quot;Pilha: &quot;, pilha)
+
+pilha.append(8)
+print(&quot;Inserindo um elemento: &quot;, pilha)
+
+pilha.append(13)
+print(&quot;Inserindo outro elemento: &quot;, pilha)
+
+pilha.pop()
+print(&quot;Removendo um elemento: &quot;, pilha)
+
+pilha.pop()
+print(&quot;Removendo outro elemento: &quot;, pilha)</code></pre>
+
+                <pre>
+Pilha:  [1, 1, 2, 3, 5]
+Inserindo um elemento:  [1, 1, 2, 3, 5, 8]
+Inserindo outro elemento:  [1, 1, 2, 3, 5, 8, 13]
+Removendo um elemento:  [1, 1, 2, 3, 5, 8]
+Removendo outro elemento:  [1, 1, 2, 3, 5]</pre>
+
+            </div>
+        </div>
+
+
+        <p>Desenvolvido por Marcelo Goçalves 2022</p>
+        <p>
+            <h4 class="mg-10"> <a href="{{url_for('fila') }}">Fila</a></a></h4>
+            <h4 class="mg-10"> <a href="{{url_for('fila_circular') }}">Fila Circular</a></a></h4>
+
+        </p>
+    </div>
+    <!--  end container -->
+</body>
+
+</html>

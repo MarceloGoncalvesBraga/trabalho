@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+    <title>Trabalho </title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+
+        </div>
+        <!-- edn id-header -->
+    </header>
+    <div class="container">
+
+        <h1>Fila</h1>
+        <div class="quadro">
+
+            <div class="left">
+                <img src="{{ url_for('static', filename='img/fila.png')}}" class="img">
+
+            </div>
+            <div class="texto">
+                <h2>Fila</h2>
+
+                <p>S&atilde;o estruturas de dados do tipo FIFO (first-in first-out), onde o primeiro elemento a ser inserido, ser&aacute; o primeiro a ser retirado, ou seja, adiciona-se itens no fim e remove-se do in&iacute;cio.</p>
+
+                <p>&nbsp;</p>
+                
+                <p><img src="https://www.cos.ufrj.br/~rfarias/cos121/fila1.png" /></p>
+                
+                <p>S&atilde;o exemplos de uso de fila em um sistema:</p>
+                
+                <ul>
+                    <li>Controle de documentos para impress&atilde;o;</li>
+                    <li>Troca de mensagem entre computadores numa rede;</li>
+                    <li>etc.</li>
+                </ul>
+                
+                <p>A implementa&ccedil;&atilde;o de filas pode ser realizada atrav&eacute;s de vetor (aloca&ccedil;&atilde;o do espa&ccedil;o de mem&oacute;ria para os elementos &eacute; cont&iacute;gua) ou atrav&eacute;s de listas encadeadas (pr&oacute;xima aula).</p>
+                
+                <p>&nbsp;</p>
+                
+                <p><strong><em>Opera&ccedil;&otilde;es com Fila:</em></strong></p>
+                
+                <p>Todas as opera&ccedil;&otilde;es em uma fila podem ser imaginadas como as que ocorre numa fila de pessoas num banco, exceto que o elementos n&atilde;o se movem na fila, conforme o primeiro elemento &eacute; retirado. Isto seria muito custoso para o computador. O que se faz na realidade &eacute; indicar quem &eacute; o primeiro.</p>
+                
+                <p><code>from&nbsp;collections&nbsp;import&nbsp;deque&nbsp;</code></p>
+                
+                <p><code># Cria uma fila com tr&ecirc;s elementos.&nbsp;</code></p>
+                
+                <p><code>fila = deque([&quot;Banana&quot;,&nbsp;&quot;Ma&ccedil;&atilde;&quot;,&nbsp;&quot;Pera&quot;]) </code></p>
+                
+                <p><code>print(&quot;Fila: &quot;, fila)&nbsp;</code></p>
+                
+                <p><code># Adiciona um elemento ao final da fila.&nbsp;</code></p>
+                
+                <p><code>fila.append(&quot;Uva&quot;) print(&quot;Adicionando um elemento: &quot;, fila)&nbsp;</code></p>
+                
+                <p><code># Remove o primeiro elemento adicionado &agrave; fila.&nbsp;</code></p>
+                
+                <p><code>fila.popleft() </code></p>
+                
+                <p><code>print(&quot;Removendo um elemento: &quot;, fila)</code>&nbsp;Fila: deque([&#39;Banana&#39;, &#39;Ma&ccedil;&atilde;&#39;, &#39;Pera&#39;])</p>
+                
+                <p>Adicionando um elemento: deque([&#39;Banana&#39;, &#39;Ma&ccedil;&atilde;&#39;, &#39;Pera&#39;, &#39;Uva&#39;])</p>
+                
+                <p>Removendo um elemento: deque([&#39;Ma&ccedil;&atilde;&#39;, &#39;Pera&#39;, &#39;Uva&#39;])</p>
+                
+               
+            </div>
+        </div>
+
+
+        <p>Desenvolvido por Marcelo Goçalves 2022</p>
+        <p>
+            <h4 class="mg-10"> <a href="{{url_for('home') }}">Pilha</a></a></h4>
+            <h4 class="mg-10"> <a href="{{url_for('fila_circular') }}">Fila Circular</a></a></h4>
+        </p>
+    </div>
+    <!--  end container -->
+</body>
+
+</html>

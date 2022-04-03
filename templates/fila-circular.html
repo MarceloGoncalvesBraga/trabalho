@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+    <title>Trabalho </title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+
+        </div>
+        <!-- edn id-header -->
+    </header>
+    <div class="container">
+
+        <h1>Fila Circular</h1>
+        <div class="quadro">
+
+            <div class="left">
+                <img src="https://www.alura.com.br/artigos/assets/estruturas-de-dados-introducao/imagem1.png" class="img">
+
+            </div>
+            <div class="texto">
+                <h2>Fila  Circular</h2>
+
+                <p>Outra varia&ccedil;&atilde;o da fila &eacute; a <strong>fila circular</strong> (<em>circular queue</em>), onde o &uacute;ltimo elemento &eacute; conectado com o primeiro elemento - como em um c&iacute;rculo:</p>
+
+                
+                <p>A fila circular busca resolver uma limita&ccedil;&atilde;o da fila linear, que &eacute; lidar com espa&ccedil;os vazios que podem se enfileirar ap&oacute;s a retirada de elementos do in&iacute;cio da fila.</p>
+                
+
+            </div>
+        </div>
+
+
+        <p>Desenvolvido por Marcelo Goçalves 2022</p>
+        <p>
+            <h4 class="mg-10"> <a href="{{url_for('fila') }}">Fila</a></a></h4>
+            <h4 class="mg-10"> <a href="{{url_for('home') }}">Pilha</a></a></h4>
+        </p>
+    </div>
+    <!--  end container -->
+</body>
+
+</html>
